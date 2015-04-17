@@ -67,50 +67,51 @@ def draw_ramp(scr, color, rect, steps):
                      pygame.Color(127, 127, 127),
                      rect, 1)
 
-draw_test(screen, 
-          pygame.Color(255, 0, 0), 
-          pygame.Color(0, 0, 0),
-          pygame.Color(186, 0, 0), 
-          pygame.Rect(100, 100, 400, 300))
+def draw_fs_test():
+    draw_test(screen, 
+              pygame.Color(255, 0, 0), 
+              pygame.Color(0, 0, 0),
+              pygame.Color(186, 0, 0), 
+              pygame.Rect(100, 100, 400, 300))
 
-draw_test(screen, 
-          pygame.Color(0, 255, 0), 
-          pygame.Color(0, 0, 0),
-          pygame.Color(0, 186, 0), 
-          pygame.Rect(600, 100, 400, 300))
+    draw_test(screen, 
+              pygame.Color(0, 255, 0), 
+              pygame.Color(0, 0, 0),
+              pygame.Color(0, 186, 0), 
+              pygame.Rect(600, 100, 400, 300))
 
-draw_test(screen, 
-          pygame.Color(0, 0, 255), 
-          pygame.Color(0, 0, 0),
-          pygame.Color(0, 0, 186), 
-          pygame.Rect(100, 500, 400, 300))
+    draw_test(screen, 
+              pygame.Color(0, 0, 255), 
+              pygame.Color(0, 0, 0),
+              pygame.Color(0, 0, 186), 
+              pygame.Rect(100, 500, 400, 300))
 
-draw_test(screen, 
-          pygame.Color(255, 255, 255), 
-          pygame.Color(0, 0, 0),
-          pygame.Color(186, 186, 186), 
-          pygame.Rect(600, 500, 400, 300))
+    draw_test(screen, 
+              pygame.Color(255, 255, 255), 
+              pygame.Color(0, 0, 0),
+              pygame.Color(186, 186, 186), 
+              pygame.Rect(600, 500, 400, 300))
 
 
-draw_ramp(screen,
-          pygame.Color(255, 255, 255),
-          pygame.Rect(100, 750, 800, 40),
-          10)
+    draw_ramp(screen,
+              pygame.Color(255, 255, 255),
+              pygame.Rect(100, 750, 800, 40),
+              10)
 
-draw_ramp(screen,
-          pygame.Color(255, 0, 0),
-          pygame.Rect(100, 800, 800, 40),
-          10)
+    draw_ramp(screen,
+              pygame.Color(255, 0, 0),
+              pygame.Rect(100, 800, 800, 40),
+              10)
 
-draw_ramp(screen,
-          pygame.Color(0, 255, 0),
-          pygame.Rect(100, 850, 800, 40),
-          10)
+    draw_ramp(screen,
+              pygame.Color(0, 255, 0),
+              pygame.Rect(100, 850, 800, 40),
+              10)
 
-draw_ramp(screen,
-          pygame.Color(0, 0, 255),
-          pygame.Rect(100, 900, 800, 40),
-          10)
+    draw_ramp(screen,
+              pygame.Color(0, 0, 255),
+              pygame.Rect(100, 900, 800, 40),
+              10)
 
 # # draw background
 # rect = pygame.Rect(width/2 - 32, 0, 64, height)
@@ -209,7 +210,8 @@ def draw_fs_gamma_ramp():
                         pygame.Rect(x, rect.top, 200, rect.width))
 
 mode = 0
-modes = [draw_fs_gamma_ramp,
+modes = [draw_fs_test,
+         draw_fs_gamma_ramp,
          draw_fs_red,
          draw_fs_green,
          draw_fs_blue,
