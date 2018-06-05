@@ -34,6 +34,7 @@ mypy:
 	--warn-unused-ignores \
 	--warn-incomplete-stub \
 	--warn-redundant-casts \
+	--disallow-incomplete-defs \
 	$(SOURCES)
 
 #	--disallow-any unimported,unannotated,decorated,explicit,generics \
