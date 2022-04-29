@@ -13,6 +13,9 @@
           monical = pkgs.python3Packages.buildPythonPackage rec {
             name = "monical";
             src = self;
+            meta = {
+              mainProgram = "monical";
+            };
             propagatedBuildInputs = [
               pkgs.python3Packages.pygame
             ];
